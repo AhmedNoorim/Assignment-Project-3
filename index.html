@@ -48,12 +48,12 @@
 
 <body class="font-manrope">
     <!-- header start -->
-    <header class="container mx-auto">
+    <header class="container mx-auto px-3">
         <nav>
-            <div class="navbar bg-base-100">
+            <div class="navbar mt-2 md:mt-6 bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost text-clr-primary lg:hidden">
+                        <div tabindex="0" role="button" class="btn btn-ghost px-0 pr-2 text-clr-primary lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -97,6 +97,40 @@
                 </div>
             </div>
         </nav>
+        <!-- banner -->
+        <div class="mt-12 md:h-[400px] lg:h-[550px] md:relative">
+            <!-- banner carousel start -->
+            <div class="md:absolute carousel w-full md:h-[400px] lg:h-[550px] rounded-2xl">
+                <!-- slide 1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute left-[5%] top-[75%] md:top-[85%] md:left-[5%]">
+                        <a href="#slide2" class="btn btn-circle bg-gray-950 border-0 text-white mr-5">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-gray-950 border-0 text-white">❯</a>
+                    </div>
+                </div>
+                <!-- slide 2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/2.png" class="w-full" />
+                    <div class="absolute left-[5%] top-[75%] md:top-[85%] md:left-[5%]">
+                        <a href="#slide1" class="btn btn-circle bg-gray-950 border-0 text-white mr-5">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-gray-950 border-0 text-white">❯</a>
+                    </div>
+                </div>
+            </div>
+            <!-- black box -->
+            <div
+                class="md:absolute md:w-[45%] bg-gray-950 rounded-2xl p-4 md:p-8 md:left-[50%] md:top-[45%] lg:top-[55%] ">
+                <h1 class="text-white text-lg md:text-2xl font-extrabold">Meet all the heroes from the field</h1>
+                <p class="text-gray-400 mt-2 text-sm md:text-base font-medium">Discover greatness at our hockey academy,
+                    where aspiring
+                    players meet
+                    field
+                    legends and unlock
+                    potential.</p>
+            </div>
+        </div>
+        <!-- banner carousel end -->
     </header>
     <!-- header end -->
 
